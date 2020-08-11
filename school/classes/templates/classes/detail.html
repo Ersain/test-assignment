@@ -1,0 +1,10 @@
+<p>Course title: {{discipline.title}} </p>
+<p>Instructor: {{discipline.professor}}</p>
+<p>
+    Students:
+<ul>
+    {% for student in student_list %}
+    <li>{{student}}</li>
+    {% endfor %}
+</ul>
+</p>

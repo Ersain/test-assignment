@@ -1,0 +1,6 @@
+<h3>List of disciplines:</h3>
+<ul>
+    {% for d in disciplines%}
+    <li><a href="{{ d.get_absolute_url }}">{{d.title}}</a></li>
+    {% endfor %}
+</ul>
